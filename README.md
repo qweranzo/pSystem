@@ -4,14 +4,14 @@ crossbrowser vanilla JS (es5) particle system, compatible with Adobe Animate Can
 
 > [CodePen demo](https://codepen.io/qweranzo/pen/WNMWmXW)
 
-##Import:
+## Import:
 - Adobe Animate
     * copy and paste code into the 0th frame of the empty movieclip 
 
 - HTML document
     - `<script src="pSystem.js"></script>`
 
-##Methods:
+## Methods:
 
 - `pSystem.start(renderer)` - args: `no args`, `'Canvas'`, `'DOM'`, `'Adobe Animate Canvas'` 
 - `pSystem.stop()` - args: `no args`
@@ -21,9 +21,9 @@ crossbrowser vanilla JS (es5) particle system, compatible with Adobe Animate Can
 - `pSystem.setFPS(fps)` - args: `positive_integer` works when particle system is running
 
 
-##Parameters:
+## Parameters:
 
-###Engine:
+### Engine:
 - `pSystem.Engine`
 
 Property | Value (default value) | Description
@@ -32,7 +32,7 @@ Property | Value (default value) | Description
 `width` | positive float. (default: canvas.width \|\| 500) | rendering area (width) if renderer is 'Adobe Animate Canvas' - equals \<canvas> width 
 `height` | positive float. (default: canvas.height \|\| 500) | rendering area (height) if renderer is 'Adobe Animate Canvas' - equals \<canvas> height 
 
-###Emitter:
+### Emitter:
 - `pSystem.Emitter`
 
 Property | Value (default value) | Description
@@ -49,7 +49,7 @@ Property | Value (default value) | Description
 `power` | float. (default: 150) | initial particle force (speed)
 `birthrate` | positive float. (default: 100) | quantity of particles per second (when `pSystem.Engine.timescale = 1`)
 
-#####Emitter randomize:
+##### Emitter randomize:
 - `pSystem.Emitter.Randomize`
 
 Property | Value (default value) | Description
@@ -57,8 +57,8 @@ Property | Value (default value) | Description
 `rotation` | float (default: 0) | randomize emitter rotation for every new particle
 `power` | float (default: 50) | randomize emitter power for every new particle
 
-###Particle:
-####Initial:
+### Particle:
+#### Initial:
 - `pSystem.Particle.Initial` initial particles properties (doesn't changes over time)
 
 Property | Value (default value) | Description
@@ -72,7 +72,7 @@ Property | Value (default value) | Description
 `radial_gradient` | boolean. (default: false) | enables transparent radial gradient for 'circle' and 'square'
 `overlay_switch_treshold` | float 0 - 1. (default: 0.5) | 0.5 means switch overlay mode (composite operation mode) after the half of the particle's life (lifetime/age)
 
-#####Randomize:
+##### Randomize:
 - `pSystem.Particle.Initial.Randomize` 
 
 Property | Value (default value) | Description
@@ -82,7 +82,7 @@ Property | Value (default value) | Description
 `rotation_spd` | float. (default: 0) | randomize particle rotation speed
 `overlay_switch_treshold` | positive float 0 - 1. (default: 0) | randomize particle overlay switch treshold
 
-####From:
+#### From:
 - `pSystem.Particle.From` particle properties that changes over time
 
 Property | Value (default value) | Description
@@ -95,7 +95,7 @@ Property | Value (default value) | Description
 `mass` | positive float. (default: 3) | particle mass
 `overlay` | string. (default: 'normal') | overlay mode, available modes <ul><li>[HTML](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode)</li><li>[Canvas](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation)</li></ul>
 
-#####Randomize:
+##### Randomize:
 - `pSystem.Particle.From.Randomize` particle properties that changes over time
 
 Property | Value (default value) | Description
@@ -107,7 +107,7 @@ Property | Value (default value) | Description
 `scaleY` | positive float. (default: 1) | add random scale height
 `mass` | positive float. (default: 3) | add random particle mass
 
-####To:
+####  To:
 - `pSystem.Particle.To` particle properties that changes over time
 
 Property | Value (default value) | Description
@@ -120,7 +120,7 @@ Property | Value (default value) | Description
 `mass` | positive float. (default: 3) | particle mass
 `overlay` | string. (default: 'normal') | overlay mode, available modes <ul><li>[HTML](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode)</li><li>[Canvas](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation)</li></ul>
 
-#####Randomize:
+##### Randomize:
 - `pSystem.Particle.To.Randomize` particle properties that changes over time
 
 Property | Value (default value) | Description
@@ -132,17 +132,17 @@ Property | Value (default value) | Description
 `scaleY` | positive float. (default: 0) | add random scale height
 `mass` | positive float. (default: 0) | add random particle mass
 
-###Forces:
+### Forces:
 - `pSystem.Forces`
 
-#####Air resistance:
+##### Air resistance:
 - `pSystem.Forces`
 
 Property | Value (default value) | Description
 :-|:-:|-:
 `air_resistance` | positive float. (default: 30) | 0 - floating without restance
 
-#####Drag:
+##### Drag:
 - `pSystem.Forces.Drag` linear movement without acceleration
 
 Property | Value (default value) | Description
@@ -150,7 +150,7 @@ Property | Value (default value) | Description
 `angle` | positive float 0 - 360. (default: 180) | in degrees
 `power` | float. (default: 100) | power
 
-#####Wind:
+##### Wind:
 - `pSystem.Forces.Wind` force with acceleration. depends on particle mass
 
 Property | Value (default value) | Description
@@ -158,7 +158,7 @@ Property | Value (default value) | Description
 `angle` | positive float 0 - 360. (default: 0) | in degrees
 `power` | float. (default: 300) | power
 
-#####Gravity:
+##### Gravity:
 - `pSystem.Forces.Gravity` force with acceleration. depends on particle mass
 
 Property | Value (default value) | Description
