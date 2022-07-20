@@ -32,7 +32,7 @@ Property | Value (default value) | Description
 `width` | positive float. (default: canvas.width \|\| 500) | rendering area (width) if renderer is 'Adobe Animate Canvas' - equals \<canvas> width 
 `height` | positive float. (default: canvas.height \|\| 500) | rendering area (height) if renderer is 'Adobe Animate Canvas' - equals \<canvas> height 
 
-### Emitter: there's only single emitter available
+### Emitter: (there's only single emitter available)
 - `pSystem.Emitter`
 
 Property | Value (default value) | Description
