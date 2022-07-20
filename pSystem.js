@@ -1015,7 +1015,6 @@ var timerid;
 function ticker_setInterval(_s_start_stop) {
 
 	if(_s_start_stop == "start") {
-		//timerid = setInterval(RunParticlesEngine, 1000/pSystem.Engine.fps);
 		timerid = setInterval(function () {
 			RunParticlesEngine();
 		}, 1000/pSystem.Engine.fps);
