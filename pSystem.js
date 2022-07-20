@@ -1,5 +1,3 @@
-// you can copy and paste this code directly to Adobe Animate frame. IT'S NECESSARY TO PAST THIS CODE INTO EMPTY MOVIECLIP !!!
-
 var an_particles_root = this; // Adobe Animate Canvas scene variable
 
 var pSystem ={
@@ -256,7 +254,6 @@ function degToRad (deg) {
 }
 
 
-// get vector2 from radians with the 'len' length
 function radToVec (rad, len) {
 	if(typeof len !== "number" || isNaN(len)) {
 		len = 1;
@@ -540,9 +537,6 @@ function createParticlesScene() {
 			var div        = document.createElement("div");
 		}
 
-		//var div        = document.createElement("div");
-
-		
 		div.id             = pSystem.Engine._dom_scene;
 		div.style.width    = pSystem.Engine.width  + "px";
 		div.style.height   = pSystem.Engine.height + "px";
