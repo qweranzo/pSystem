@@ -157,7 +157,7 @@ pSystem.stop = function () {
 
 pSystem.restart = function (renderer) {
 	pSystem.stop();
-	pSystem.start();
+	pSystem.start(renderer);
 }
 
 pSystem.pause = function () {
