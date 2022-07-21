@@ -2,8 +2,9 @@
 
 crossbrowser vanilla JS (es5) particle system library, compatible with Adobe Animate Canvas (basic createjs shapes, createjs MovieClips)
 
-> [CodePen demo](https://codepen.io/qweranzo/pen/WNMWmXW)
-> [demo](http://asdferson.ru/demos/particle_system/particles.html)
+> [demo CodePen](https://codepen.io/qweranzo/pen/WNMWmXW)
+
+> [demo \(another link\)](http://asdferson.ru/demos/particle_system/particles.html)
 
 ## Import:
 - Adobe Animate
