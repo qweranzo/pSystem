@@ -3,6 +3,7 @@
 crossbrowser vanilla JS (es5) particle system library, compatible with Adobe Animate Canvas (basic createjs shapes, createjs MovieClips)
 
 > [CodePen demo](https://codepen.io/qweranzo/pen/WNMWmXW)
+> [demo](http://asdferson.ru/demos/particle_system/particles.html)
 
 ## Import:
 - Adobe Animate
@@ -15,7 +16,7 @@ crossbrowser vanilla JS (es5) particle system library, compatible with Adobe Ani
 
 - `pSystem.start(renderer)` - args: `no args`, `'Canvas'`, `'DOM'`, `'Adobe Animate Canvas'` 
 - `pSystem.stop()` - args: `no args`
-- `pSystem.restart(renderer)` - args: `no args`, `'Canvas'`, `'DOM'`, `'Adobe Animate Canvas'` the same is stop() start()
+- `pSystem.restart(renderer)` - args: `no args`, `'Canvas'`, `'DOM'`, `'Adobe Animate Canvas'` the same as stop() start()
 - `pSystem.pause()` - args: `no args` 
 - `pSystem.resume()` - args: `no args`
 - `pSystem.setFPS(fps)` - args: `positive_integer` works when particle system is running
@@ -140,7 +141,7 @@ Property | Value (default value) | Description
 
 Property | Value (default value) | Description
 :-|:-:|-:
-`air_resistance` | positive float. (default: 30) | 0 - floating without restance
+`air_resistance` | positive float. (default: 30) | 0 - floating without resistance
 
 ##### Drag:
 - `pSystem.Forces.Drag` linear movement without acceleration
